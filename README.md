@@ -8,13 +8,12 @@ char grade = 'A';          // A character variable to store a grade
 string name = "John";      // A string variable to store a name
 bool isActive = true;      // A boolean variable to indicate activity status
 ```
-Here, age can hold whole numbers, price can hold decimal values, grade stores a single character, name holds text, and isActive represents true or false.
+Here, **age** can hold whole numbers, **price** can hold decimal values, **grade** stores a single character, **name** holds text, and **isActive** represents true or false.
 
-Control Flow and Conditional Statements:
+*Control Flow and Conditional Statements:*
 Control flow structures determine how your program executes based on conditions.
 
-csharp
-Copy code
+```C#
 int num = 10;
 if (num > 5)
 {
@@ -28,6 +27,7 @@ else
 {
     Console.WriteLine("Number is less than 5");
 }
+```
 In this example, if num is greater than 5, the first block executes. If num is 5, the second block runs. Otherwise, the final block executes.
 
 Loops and Iteration:
