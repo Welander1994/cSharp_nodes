@@ -28,13 +28,11 @@ else
     Console.WriteLine("Number is less than 5");
 }
 ```
-In this example, if num is greater than 5, the first block executes. If num is 5, the second block runs. Otherwise, the final block executes.
-
-Loops and Iteration:
+In this example, if **num** is greater than 5, the first block executes. If **num** is 5, the second block runs. Otherwise, the final block executes.
+### Loops and Iteration: 
 Loops allow you to execute a block of code repeatedly.
 
-csharp
-Copy code
+```C#
 for (int i = 0; i < 5; i++)
 {
     Console.WriteLine("Iteration: " + i);
@@ -53,13 +51,13 @@ do
     Console.WriteLine("Number: " + num);
     num++;
 } while (num < 3);
-The for loop iterates a fixed number of times. The while loop continues as long as a condition is true. The do-while loop executes the block once before checking the condition.
+```
+The **for** loop iterates a fixed number of times. The **while** loop continues as long as a condition is true. The **do-while** loop executes the block once before checking the condition.
 
-Arrays and Collections:
+### Arrays and Collections:
 Arrays store multiple values of the same type, while collections offer dynamic storage.
 
-csharp
-Copy code
+```C#
 int[] numbers = { 1, 2, 3, 4, 5 };
 Console.WriteLine("Second element: " + numbers[1]);
 
@@ -67,6 +65,7 @@ List<string> names = new List<string>();
 names.Add("Alice");
 names.Add("Bob");
 Console.WriteLine("Number of names: " + names.Count);
+```
 In the example, numbers is an array with five integers. You access elements using an index (0-based). names is a List where you can add and remove elements dynamically.
 
 Functions and Methods:
