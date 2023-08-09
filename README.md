@@ -348,3 +348,57 @@ person.Name = "Alice"; // Using the setter
 Console.WriteLine(person.Name); // Using the getter
 ```
 Using properties helps ensure that your code adheres to principles like encapsulation and information hiding, contributing to better code maintenance and reusability.
+
+## Shortcuts
+
+These shortcuts are often referred to as code snippets or code templates. Here are a few more examples:
+
+1. **`prop`** + **`Tab`** + **`Tab`**: This generates a property declaration. After typing "prop" and pressing Tab twice, you'll get a snippet like this:
+
+```C#
+public int MyProperty { get; set; }
+```
+
+2. **`for`** + **`Tab`** + **`Tab`**: This generates a basic for loop structure:
+```C#
+for (int i = 0; i < length; i++)
+{
+    
+}
+```
+
+3. **`foreach`** + **`Tab`** + **`Tab`**: This generates a foreach loop structure:
+
+```C#
+foreach (var item in collection)
+{
+    
+}
+```
+4. **`try`** + **`Tab`** + **`Tab`**: This generates a try...catch block:
+```C#
+try
+{
+    
+}
+catch (Exception)
+{
+    
+}
+```
+
+5. **`ctor`** + **`Tab`** + **`Tab`**: This generates a constructor for a class:
+```C#
+public ClassName()
+{
+    
+}
+```
+6. **`m`** + **`Tab`** + **`Tab`**: This generates a method declaration:
+```C#
+public void MethodName()
+{
+    
+}
+```
+These are just a few examples. Visual Studio provides a wide range of code snippets that cover common programming constructs. You can often use a short mnemonic followed by the Tab key twice to quickly expand these snippets. If you want to explore and customize these snippets or create your own, you can go to "Tools" > "Code Snippets Manager" in Visual Studio.
