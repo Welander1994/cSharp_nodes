@@ -10,7 +10,7 @@ bool isActive = true;      // A boolean variable to indicate activity status
 ```
 Here, **age** can hold whole numbers, **price** can hold decimal values, **grade** stores a single character, **name** holds text, and **isActive** represents true or false.
 
-*Control Flow and Conditional Statements:*
+**Control Flow and Conditional Statements:** <br>
 Control flow structures determine how your program executes based on conditions.
 
 ```C#
