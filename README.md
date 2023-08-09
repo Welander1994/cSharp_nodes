@@ -251,3 +251,100 @@ async Task<string> DownloadDataAsync()
 The **async** keyword marks a method as asynchronous. **await** is used to await the completion of asynchronous tasks.
 
 Each topic's explanations and examples should provide you with a solid foundation in C# programming. As you practice and build projects, your understanding will deepen further.
+
+Setters and Getters (Properties):
+In C#, properties provide controlled access to the fields of a class. They use get and set accessors to retrieve and assign values, respectively.
+
+```C#
+class Person
+{
+    private string name; // Private field
+
+    public string Name // Public property
+    {
+        get { return name; } // Getter retrieves value
+        set { name = value; } // Setter assigns value
+    }
+}
+```
+In this example, the **`Name`** property encapsulates the private field **`name`**. The **`getter`** retrieves the value of **`name`**, and the setter assigns a new value to it.
+
+You can use properties to add validation or other logic when accessing fields:
+
+```C#
+class BankAccount
+{
+    private decimal balance;
+
+    public decimal Balance
+    {
+        get { return balance; }
+        set
+        {
+            if (value >= 0)
+                balance = value;
+            else
+                Console.WriteLine("Balance cannot be negative.");
+        }
+    }
+}
+``` 
+Here, the **`Balance`** property ensures that the balance is not set to a negative value.
+
+### Auto-Implemented Properties:
+C# also supports auto-implemented properties, which automatically generate the getter and setter for a field.
+
+```C#
+class Book
+{
+    public string Title { get; set; } // Auto-implemented property
+    public string Author { get; set; } // Auto-implemented property
+}
+```
+Auto-implemented properties are a concise way to define properties when additional logic isn't required.
+
+### Read-Only Properties:
+You can create read-only properties with only a getter.
+
+```C#
+class Circle
+{
+    private double radius;
+
+    public Circle(double r)
+    {
+        radius = r;
+    }
+
+    public double Radius => radius; // Read-only property
+    public double Area => Math.PI * radius * radius; // Read-only property
+}
+```
+In this example, the **`Radius`**  and **`Area`** properties only have getters, making them read-only.
+
+### Accessibility Modifiers:
+Properties can have different access modifiers (public, private, etc.) to control their visibility.
+
+```C#
+class MyClass
+{
+    private int myValue; // Private field
+
+    public int MyValue // Public property
+    {
+        get { return myValue; }
+        private set { myValue = value; } // Private setter
+    }
+}
+```
+In this example, the property **`MyValue`** has a private setter, meaning it can only be modified within the class.
+
+### Benefits of Properties:
+Properties provide an interface to access class fields while allowing encapsulation and controlled access. They offer a clean way to expose data externally and encapsulate the implementation details within the class.
+
+```C#
+Person person = new Person();
+person.Name = "Alice"; // Using the setter
+Console.WriteLine(person.Name); // Using the getter
+```
+Using properties helps ensure that your code adheres to principles like encapsulation and information hiding, contributing to better code maintenance and reusability.
