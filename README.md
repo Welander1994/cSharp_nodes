@@ -1,13 +1,13 @@
-Data Types and Variables:
+##Data Types and Variables:
 In C#, data types define the kind of values variables can hold. Variables are placeholders for data that can change over time.
 
-csharp
-Copy code
+```C#
 int age = 25;              // An integer variable to store age
 double price = 19.99;      // A double variable to store price
 char grade = 'A';          // A character variable to store a grade
 string name = "John";      // A string variable to store a name
 bool isActive = true;      // A boolean variable to indicate activity status
+```
 Here, age can hold whole numbers, price can hold decimal values, grade stores a single character, name holds text, and isActive represents true or false.
 
 Control Flow and Conditional Statements:
