@@ -1,4 +1,4 @@
-##Data Types and Variables:
+## Data Types and Variables:
 In C#, data types define the kind of values variables can hold. Variables are placeholders for data that can change over time.
 
 ```C#
